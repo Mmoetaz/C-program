@@ -27,10 +27,8 @@ employee emp(){
 	return e;
 }
 
-void empty(list *l,list *l1,list *l2){
+void empty(list *l){
 	*l=NULL;
-	*l1=NULL;
-	*l2=NULL;
 }
 
 void fill(list *l){
@@ -109,8 +107,8 @@ void show_less_18(list l){
 
 main(){
 	int i;
-	list l,l1,l2;
-	empty(&l,&l1,&l2);
+	list l;
+	empty(&l);
 	printf("Please put a '_' between the first name and the name without spaces!! \n(ej: John_Smith):");
 	printf("\n\nIf you want to Enter a new User ==> PRESS 1");
 	printf("\nIf you want to Display the list from the beginning ==> PRESS 2");
